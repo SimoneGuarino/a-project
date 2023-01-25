@@ -10,5 +10,8 @@
     "lacerba"
   ],
   "author": "Danger",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/SimoneGuarino/a-project"
+  }
 }

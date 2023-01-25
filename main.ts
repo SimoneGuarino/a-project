@@ -1,16 +1,37 @@
-let myVar: number = 3; 
-myVar += 10;
+const arr: number[] = [2,3,6,4,5];
 
-console.log("MyVar = ", myVar);
+let summ: number = 0;
 
-interface MyInterface {
-    myNumber: number;
-    myString: string;
+function SummMed(arr: number[]):number {
+    for(let num of arr){
+        summ += num;
+    }
+    return summ;
+}
+function Media(arr: number[]):number {
+    return summ / arr.length;
 }
 
-let myInterface: MyInterface = {
-    myNumber: 10,
-    myString: "Hello World",
+const Minimo = (arr: number[]): number => {
+    let min = arr[0];
+    for(let n of arr){
+        if(n < min){
+            min = n;
+        }
+    }
+    return min;
+};
+const Massimo = (arr: number[]): number => {
+    let max = arr[0];
+    for(let n of arr){
+        if(n > max){
+            max = n;
+        }
+    }
+    return max;
 };
 
-console.log("myNumber = ", myInterface.myNumber);
+console.log(`Somma = ${SummMed(arr)}`)
+console.log(`Media = ${Media(arr)}`)
+console.log(`Minimo = ${Minimo(arr)}`)
+console.log(`Massimo = ${Massimo(arr)}`)
